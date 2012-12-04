@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = UecExpressApi::VERSION
   gem.authors       = ["henteko"]
   gem.email         = ["henteko07@gmail.com"]
-  gem.description   = %q{API library of the University of Electro-Communications class cancellation information}
-  gem.summary       = %q{API library of the University of Electro-Communications class cancellation information}
+  gem.description   = %q{API library of the University of Electro-Communications class cancellation information.}
+  gem.summary       = %q{API library of the University of Electro-Communications class cancellation information.}
   gem.homepage      = "http://henteko07.hatenablog.com/"
 
   gem.files         = `git ls-files`.split($/)

@@ -1,6 +1,6 @@
 # UecExpressApi
 
-TODO: Write a gem description
+API library of the University of Electro-Communications class cancellation information.
 
 ## Installation
 
