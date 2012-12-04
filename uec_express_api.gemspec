@@ -11,7 +11,8 @@ Gem::Specification.new do |gem|
   gem.description   = %q{API library of the University of Electro-Communications class cancellation information.}
   gem.summary       = %q{API library of the University of Electro-Communications class cancellation information.}
   gem.homepage      = "http://henteko07.hatenablog.com/"
-  gem.documentation = "https://github.com/henteko/uec_express_api"
+
+  gem.rubyforge_project = "uec_express_api" 
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
