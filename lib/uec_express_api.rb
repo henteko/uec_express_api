@@ -7,7 +7,7 @@ class UECExpressApi
 
     attr_accessor  :updated, :express
 
-    @@debug = true
+    @@debug = false
     def initialize()
 
         @updated = ""
