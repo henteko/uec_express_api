@@ -2,6 +2,7 @@ require 'rubygems'
 require 'open-uri'
 require 'hpricot'
 require 'json'
+require 'uec_express_api/version.rb'
 
 class UECExpressApi
 
