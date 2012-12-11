@@ -58,7 +58,11 @@ class UECExpressApi
     def updated(doc)
         elements = doc/:p
         if elements
-            @updated = elements.last.inner_html.to_s.encode('utf-8', 'sjis')
+            begin
+                @updated = elements.last.inner_html.to_s.encode('utf-8', 'sjis')
+            rescue
+                 @updated = elements.last.inner_html.to_s
+            end
         end
     end
 
@@ -68,7 +72,11 @@ class UECExpressApi
             next if i == 0
             ex = {}
             (element/:td).each_with_index do |e, j|
-                ex[express_pass[j]] = e.inner_html.to_s.encode('utf-8', 'sjis')
+                begin
+                    ex[express_pass[j]] = e.inner_html.to_s.encode('utf-8', 'sjis')
+                rescue
+                    ex[express_pass[j]] = e.inner_html.to_s
+                end
             end
             @express << ex
         end
