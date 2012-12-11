@@ -22,10 +22,15 @@ Or install it yourself as:
 #!/usr/bin/ruby
 require 'rubygems'
 require 'uec_express_api'
+require 'json'
 
-uec_express = UECExpressApi.new()
-uec_express.to_s
-puts uec_express.to_json
+uec_express_faculty = UECExpressApi.new() #=> Faculty of Information
+uec_express_faculty.to_s
+puts uec_express_faculty.to_hash.to_json
+
+uec_express_gs = UECExpressApi.new() #=> Graduate school of Information
+uec_express_gs.to_s
+puts uec_express_gs.to_hash.to_json
 ```
 
 ##License and copyright
