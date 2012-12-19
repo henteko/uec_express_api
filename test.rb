@@ -1,7 +1,9 @@
 require File.expand_path(File.dirname(__FILE__) + '/lib/uec_express_api')
 require 'json'
 
+# faculty
 faculty = UECExpressApi.new()
+# gs
 gs      = UECExpressApi.new(2)
 
 faculty.to_s
